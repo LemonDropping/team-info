@@ -50,8 +50,8 @@ class CLI {
       ])
       .then(({ text, priority, confirmAddTask }) => {
         this.info.push({ text, priority });
-        if (confirmAddTask) {
-          return this.addTask();
+        if (confirmAddInfo) {
+          return this.addInfo();
         }
       });
   }
